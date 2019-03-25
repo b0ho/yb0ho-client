@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import { HOME_PAGE } from "./queries";
-import Movie from "./Movie";
+import { HOME_PAGE } from "../../Components/queries";
+import Movie from "../../Components/Movie";
 import { useQuery } from "react-apollo-hooks";
 
 const Container = styled.div`
