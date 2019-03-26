@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import { HOME_PAGE } from "../../Components/queries";
-import Movie from "../../Components/Movie";
+import { HOME_PAGE } from "../Components/queries";
+import Movie from "../Components/Movie";
 import { useQuery } from "react-apollo-hooks";
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ const Container = styled.div`
   justify-items: center;
 `;
 
-const Home = () => {
+const Move = () => {
   const { data, error, loading } = useQuery(HOME_PAGE);
   return (
     <Container>
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Move;

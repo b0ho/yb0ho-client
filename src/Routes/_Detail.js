@@ -1,8 +1,8 @@
 import React from "react";
 import { Query } from "react-apollo";
-import { MOVIE_DETAILS } from "../../Components/queries";
+import { MOVIE_DETAILS } from "../Components/queries";
 import { Helmet } from "react-helmet";
-import Movie from "../../Components/Movie";
+import Movie from "../Components/Movie";
 import styled from "styled-components";
 import { useQuery } from "react-apollo-hooks";
 
