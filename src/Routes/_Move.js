@@ -12,7 +12,7 @@ const Container = styled.div`
   justify-items: center;
 `;
 
-const Move = () => {
+const _Move = () => {
   const { data, error, loading } = useQuery(HOME_PAGE);
   return (
     <Container>
@@ -37,4 +37,4 @@ const Move = () => {
   );
 };
 
-export default Move;
+export default _Move;

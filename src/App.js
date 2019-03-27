@@ -13,29 +13,31 @@ import Summary from "./Routes/Summary";
 import Project from "./Routes/Project";
 import Detail from "./Routes/Detail";
 import Advice from "./Routes/Advice";
+import Notfound from "./Routes/Notfound";
 
 class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
         <ApolloHooksProvider client={client}>
-          <Router>
-            <div> 
-              <Header />
-              <Switch>
-                <Route exact={true} path={"/"} component={Home} />
-                <Route path={"/summary"} component={Summary} />
-                <Route path={"/project"} component={Project} />
-                <Route path={"/detail"} component={Detail} />
-                <Route path={"/advice"} component={Advice} />
-                <Route path={"/move"} component={_Move} />
-                <Route path={"/details/:movieId"} component={_Detail} />
-              </Switch>
-            </div>
-          </Router>
+          <div>
+            <Home exact={true} path={"/"} component={Home} />
+            <Header />
+            <Summary path={"#summary"} component={Summary} />
+            <Project path={"#project"} component={Project} />
+            <Detail path={"#detail"} component={Detail} />
+            <Advice path={"#advice"} component={Advice} />
+            {/* <_Move path={"#move"} component={_Move} />
+            <_Detail path={"#details/:movieId"} component={_Detail} /> */}
+            {/* 
+            <Switch>
+              <Route path={"#project"} component={Project} />
+              <Route component={Notfound} />
+            </Switch>
+            */}
+          </div>
         </ApolloHooksProvider>
       </ApolloProvider>
-      
     );
   }
 }

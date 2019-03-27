@@ -39,7 +39,7 @@ const MovieContainer = styled.div`
   margin-top: 50px;
 `;
 
-const Detail = ({
+const _Detail = ({
   match: {
     params: { movieId }
   }
@@ -86,4 +86,4 @@ const Detail = ({
   );
 };
 
-export default Detail;
+export default _Detail;
