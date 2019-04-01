@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import styled from "styled-components";
-import Timeline from "TimelineJS3/source/js/TL.Timeline";
-import TL from "TimelineJS3/source/js/TL";
+// import Timeline from "TimelineJS3/source/js/TL.Timeline";
+// import TL from "TimelineJS3/source/js/TL";
 
 const Container = styled.div`
   border-top: 20px solid white;
@@ -22,10 +22,10 @@ const Content = styled.div`
 
 class Home extends Component {
   render() {
-    var timeline = new TL.Timeline(
-      "timeline-embed",
-      "https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml"
-    );
+    // var timeline = new TL.Timeline(
+    //   "timeline-embed",
+    //   "https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml"
+    // );
     return (
       <Fragment>
         <Container>
