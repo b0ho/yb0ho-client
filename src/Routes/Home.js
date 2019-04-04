@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -33,7 +33,7 @@ class Home extends Component {
           <Content />
 
           <iframe
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mtuD5DT7AttHwNFP2ugrrHgZBQK928om52uM5dQ3ACA&font=Default&lang=ko&start_at_end=true&initial_zoom=2&height=600"
+            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mtuD5DT7AttHwNFP2ugrrHgZBQK928om52uM5dQ3ACA&font=Default&lang=ko&start_at_end=true&initial_zoom=0&height=580"
             width="100%"
             height="600"
             webkitallowfullscreen
