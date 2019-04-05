@@ -9,7 +9,7 @@ import client from "./Components/apolloClient";
 import _Detail from "./Routes/_Detail";
 import _Move from "./Routes/_Move";
 import Home from "./Routes/Home";
-import Summary from "./Routes/Summary";
+import Introduce from "./Routes/Introduce";
 import Project from "./Routes/Project";
 import Detail from "./Routes/Detail";
 import Advice from "./Routes/Advice";
@@ -23,10 +23,10 @@ class App extends Component {
           <div>
             <Home exact={true} path={"/"} component={Home} />
             <Header />
-            <Summary path={"#summary"} component={Summary} />
-            <Project path={"#project"} component={Project} />
-            <Detail path={"#detail"} component={Detail} />
-            <Advice path={"#advice"} component={Advice} />
+            <Introduce path={"introduce"} component={Introduce} />
+            <Project path={"project"} component={Project} />
+            <Detail path={"detail"} component={Detail} />
+            <Advice path={"advice"} component={Advice} />
             {/* <_Move path={"#move"} component={_Move} />
             <_Detail path={"#details/:movieId"} component={_Detail} /> */}
             {/* 

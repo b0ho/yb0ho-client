@@ -4,12 +4,11 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = styled.div`
   font-size: 40px;
-  display: inline-block;
   position: sticky;
   top: 0px;
   width: 100%;
   height: 60px;
-  background: gray;
+  background-color: gray;
   text-align: center;
 `;
 
@@ -21,8 +20,9 @@ const Header = () => {
           <a class="button" href="#">
             Home
           </a>
-          <a class="button" href="#summary">
-            Summary
+
+          <a class="button" href="#introduce">
+            Introduce
           </a>
 
           <a class="button" href="#project">

@@ -4,14 +4,13 @@ import styled from "styled-components";
 // import TL from "TimelineJS3/source/js/TL";
 
 const Container = styled.div`
-  border-top: 20px solid white;
+  border-top: 20px solid gray;
 `;
 
 const Title = styled.div`
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 40px;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 20px;
 `;
 
@@ -29,7 +28,7 @@ class Home extends Component {
     return (
       <Fragment>
         <Container>
-          <Title>안녕하세요. 유병호 입니다.</Title>
+          <Title />
           <Content />
 
           <iframe
