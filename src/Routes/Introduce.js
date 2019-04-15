@@ -32,12 +32,15 @@ const Project = () => {
     <Fragment>
       <Container>
         <Title>소개합니다</Title>
+        <SubTitle>환영합니다</SubTitle>
+        <Content>인사말 -사이트에 대한 간단한 설명</Content>
+        <SubTitle>포트폴리오</SubTitle>
+        <Content>포트폴리오 이미지와 링크</Content>
         <SubTitle>간략 소개</SubTitle>
         <Content>
-          간략 소개 내가 추구하는 것 이루고 싶은 목표 하고싶은 일 잘하는 것
+          소갯말 -간략 소개 내가 추구하는 것 이루고 싶은 목표 하고싶은 일 잘하는
+          것
         </Content>
-        <SubTitle>내가 추구하는 것</SubTitle>
-        <Content>내용</Content>
       </Container>
     </Fragment>
   );
