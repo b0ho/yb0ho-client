@@ -22,36 +22,17 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <ApolloHooksProvider client={client}>
-<<<<<<< HEAD
           <Route>
             <div>
               <Home exact={true} path={"#"} component={Home} />
               <Header />
-              <Summary to={"#summary"} component={Summary} />
-              <Project exact to={"#project"} component={Project} />
+              <Introduce path={"#introduce"} component={Introduce} />
+              <Project path={"#project"} component={Project} />
               <Detail path={"#detail"} component={Detail} />
               <Advice path={"#advice"} component={Advice} />
               <Footer />
             </div>
           </Route>
-=======
-          <div>
-            <Home exact={true} path={"/"} component={Home} />
-            <Header />
-            <Introduce path={"introduce"} component={Introduce} />
-            <Project path={"project"} component={Project} />
-            <Detail path={"detail"} component={Detail} />
-            <Advice path={"advice"} component={Advice} />
-            {/* <_Move path={"#move"} component={_Move} />
-            <_Detail path={"#details/:movieId"} component={_Detail} /> */}
-            {/* 
-            <Switch>
-              <Route path={"#project"} component={Project} />
-              <Route component={Notfound} />
-            </Switch>
-            */}
-          </div>
->>>>>>> 555ee6a4ebdbcefd68aaced9d25e7f32ead07d67
         </ApolloHooksProvider>
       </ApolloProvider>
     );

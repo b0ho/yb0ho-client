@@ -7,12 +7,7 @@ const Container = styled.div`
   border-top: 20px solid gray;
 `;
 
-const Title = styled.div`
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-`;
+const Title = styled.div``;
 
 const Content = styled.div`
   justify-items: center;
