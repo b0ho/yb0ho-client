@@ -4,9 +4,11 @@ import styled from "styled-components";
 const Container = styled.div`
   max-width: 1000px;
   margin: 0 auto;
+  border-bottom: 5px solid gray;
 `;
 
 const Title = styled.div`
+  margin-top: 50px;
   font-size: 40px;
   font-weight: 700;
 `;
@@ -20,29 +22,31 @@ const SubTitle = styled.div`
 const Content = styled.div`
   margin: 50px 0 50px 300px;
   font-size: 20px;
+  border-bottom: 1px solid gray;
 `;
 
 const Detail = () => {
   return (
     <Fragment>
       <Container>
-        <Title>기타사항</Title>
+        <Title>관련 기술</Title>
         <SubTitle>ss</SubTitle>
         <Content>
-          소프트웨어 전공에서 가장 중요하게 다루었던 것은 프로젝트였습니다. 물론
-          그 기반으로써 이론과 기초 학습 과정이 선행 되었습니다. 이론 과정에는
-          컴퓨터 구조 등의 컴퓨터에 대한 이해를 위한 과목, 알고리즘 등의 자료를
-          다루는 방법에 대한 과목, 그리고 네트워크에 대한 과목들이 있었습니다.
-          프로젝트 과정에는 자바를 중심으로 하는 윈도우 프로그래밍, 데이터
-          베이스를 중심으로하는 웹 프로그래밍 들이 이었습니다. 선행 과정
-          이후에는 팀 단위의 프로젝트를 수행했습니다. 프로젝트의 개요를 구상하여
-          계획, 설계하고 이를 구현, 점검하는 일련의 과정을 진행했습니다.
-          프로젝트 위주의 수업은 팀 간의 의사소통과 개개인의 실력차이 그리고
-          목표에 대한 기대치 부분에서 어려움이 있었습니다. 때문에 프로젝트에
-          임할 때에 가장 중점을 둔 것은 합의된 명확한 목표를 설정하는 것과 팀에
-          혹이 되지 않도록 노력 하는 것이었습니다. 프로젝트 과제는 많은 시간과
-          협력이 필요했기 때문에 많은 고생과 노력이 필요했지만 동시에 혼자로서는
-          얻기 어려운 결과를 성취할 수 있는 경험이었습니다.
+          어떻게 공부하는가? 대학교-학과수업을 통한 지식 습득 및 팀 프로젝트
+          진행 이후 온라인 강의를 통해 원하는 기술 습득 feedly를 활용하여 주요
+          기술 블로그와 프로그래머 블로그를 통해 기술 동향과 관련 기술 팁을 배움
+          평상시에 메모하는 습관-아이디어를 찾고 기록해둠 괜찮은 서비스에 대한
+          목표 프로그래머스, 삼성 sw 아카데미에서 알고리즘 공부 문제 해결 방법:
+          코드 점검, 시스템 점검, 구글 검색(stack overflow 등 ), 질의
+        </Content>
+        <SubTitle>ss</SubTitle>
+        <Content>
+          어떻게 공부하는가? 대학교-학과수업을 통한 지식 습득 및 팀 프로젝트
+          진행 이후 온라인 강의를 통해 원하는 기술 습득 feedly를 활용하여 주요
+          기술 블로그와 프로그래머 블로그를 통해 기술 동향과 관련 기술 팁을 배움
+          평상시에 메모하는 습관-아이디어를 찾고 기록해둠 괜찮은 서비스에 대한
+          목표 프로그래머스, 삼성 sw 아카데미에서 알고리즘 공부 문제 해결 방법:
+          코드 점검, 시스템 점검, 구글 검색(stack overflow 등 ), 질의
         </Content>
       </Container>
     </Fragment>

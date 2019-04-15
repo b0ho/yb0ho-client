@@ -11,7 +11,6 @@ const Title = styled.div`
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 40px;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 20px;
 `;
 

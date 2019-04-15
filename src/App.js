@@ -10,7 +10,7 @@ import client from "./Components/apolloClient";
 import _Detail from "./Routes/_Detail";
 import _Move from "./Routes/_Move";
 import Home from "./Routes/Home";
-import Summary from "./Routes/Summary";
+import Introduce from "./Routes/Introduce";
 import Project from "./Routes/Project";
 import Detail from "./Routes/Detail";
 import Advice from "./Routes/Advice";
@@ -22,6 +22,7 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <ApolloHooksProvider client={client}>
+<<<<<<< HEAD
           <Route>
             <div>
               <Home exact={true} path={"#"} component={Home} />
@@ -33,6 +34,24 @@ class App extends Component {
               <Footer />
             </div>
           </Route>
+=======
+          <div>
+            <Home exact={true} path={"/"} component={Home} />
+            <Header />
+            <Introduce path={"introduce"} component={Introduce} />
+            <Project path={"project"} component={Project} />
+            <Detail path={"detail"} component={Detail} />
+            <Advice path={"advice"} component={Advice} />
+            {/* <_Move path={"#move"} component={_Move} />
+            <_Detail path={"#details/:movieId"} component={_Detail} /> */}
+            {/* 
+            <Switch>
+              <Route path={"#project"} component={Project} />
+              <Route component={Notfound} />
+            </Switch>
+            */}
+          </div>
+>>>>>>> 555ee6a4ebdbcefd68aaced9d25e7f32ead07d67
         </ApolloHooksProvider>
       </ApolloProvider>
     );
