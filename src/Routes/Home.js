@@ -4,7 +4,7 @@ import styled from "styled-components";
 // import TL from "TimelineJS3/source/js/TL";
 
 const Container = styled.div`
-  border-top: 20px solid white;
+  border-top: 20px solid gray;
 `;
 
 const Title = styled.div`
@@ -29,13 +29,13 @@ class Home extends Component {
     return (
       <Fragment>
         <Container>
-          <Title>안녕하세요. 유병호 입니다.</Title>
+          <Title />
           <Content />
 
           <iframe
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mtuD5DT7AttHwNFP2ugrrHgZBQK928om52uM5dQ3ACA&font=Default&lang=ko&start_at_end=true&initial_zoom=0&height=580"
+            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mtuD5DT7AttHwNFP2ugrrHgZBQK928om52uM5dQ3ACA&font=Default&lang=ko&start_at_end=true&initial_zoom=0&height=680"
             width="100%"
-            height="600"
+            height="700"
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen

@@ -5,7 +5,7 @@ injectGlobal`
   ${reset};
   body{
     font-family: 'Maven Pro', sans-serif;
-    background-color: #ecf0f1;
+    background-color: white;
   }
   a{
       color:inherit;
