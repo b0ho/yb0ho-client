@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import eximg from "../img/다운로드.jpeg";
 
 const Container = styled.div`
   max-width: 1000px;
@@ -37,7 +38,47 @@ const Popupwindow = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-const Popup_inner = styled.div`
+const Exit = styled.div`
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+`;
+
+const Round = styled.div`
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+`;
+
+const Versus = styled.div`
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+`;
+
+const Left = styled.div`
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+`;
+
+const Right = styled.div`
   position: absolute;
   left: 25%;
   right: 25%;
@@ -52,10 +93,19 @@ class Popup extends React.Component {
     return (
       <Fragment>
         <Popupwindow>
-          <Popup_inner>
-            <h1>{this.props.text}</h1>
-            <button onClick={this.props.closePopup}>close me!</button>
-          </Popup_inner>
+          <Exit>
+            {/* <h1>{this.props.text}</h1> */}
+            팝업에 표시된 내용
+            <button onClick={this.props.closePopup}>닫기</button>
+          </Exit>
+          <Round />
+          />
+          <Versus>
+            <img src={eximg} />
+          </Versus>
+          />
+          <Left />
+          <Right />
         </Popupwindow>
       </Fragment>
     );
@@ -83,9 +133,14 @@ class Advice extends React.Component {
           <Title>조언</Title>
           <SubTitle>고래고래</SubTitle>
           <Content>
-            <button onClick={this.togglePopup.bind(this)}>show popup</button>
+            <button onClick={this.togglePopup.bind(this)}>
+              여기에 이미지가 표시될 것임
+            </button>
             {this.state.showPopup ? (
-              <Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
+              <Popup
+                text="프로그래밍 월드컵"
+                closePopup={this.togglePopup.bind(this)}
+              />
             ) : null}
           </Content>
         </Container>

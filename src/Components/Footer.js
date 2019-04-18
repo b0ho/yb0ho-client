@@ -4,6 +4,8 @@ import styled from "styled-components";
 const Foot = styled.div`
   font-size: 20px;
   display: inline-block;
+  position: sticky;
+  bottom: 0px;
   width: 100%;
   height: 30px;
   background: gray;
