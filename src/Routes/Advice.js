@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import eximg from "../img/다운로드.jpeg";
 
 const Container = styled.div`
   max-width: 1000px;
@@ -99,11 +98,6 @@ class Popup extends React.Component {
             <button onClick={this.props.closePopup}>닫기</button>
           </Exit>
           <Round />
-          />
-          <Versus>
-            <img src={eximg} />
-          </Versus>
-          />
           <Left />
           <Right />
         </Popupwindow>
