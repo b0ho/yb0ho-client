@@ -1,31 +1,19 @@
 import gql from "graphql-tag";
 
-export const HOME_PAGE = gql`
+export const LEFT = gql`
   {
-    movies(limit: 50, rating: 7) {
-      id
+    images(tags: "개발자에게_필요한것") {
       title
-      rating
-      medium_cover_image
+      location
     }
   }
 `;
 
-export const MOVIE_DETAILS = gql`
-  query getMovieDetails($movieId: Int!) {
-    movie(id: $movieId) {
-      medium_cover_image
+export const RIGHT = gql`
+  {
+    images(tags: "개발자에게_필요한것") {
       title
-      rating
-      description_intro
-      language
-      genres
-    }
-    suggestions(id: $movieId) {
-      id
-      title
-      rating
-      medium_cover_image
+      location
     }
   }
 `;
