@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -9,9 +9,11 @@ const Conteiner = styled.div`
 const Title = styled.span``;
 
 const Img = ({ title, location }) => (
-  <Conteiner background={location}>
-    <Title>{title}</Title>
-  </Conteiner>
+  <Fragment>
+    <Conteiner background={location}>
+      <Title>{title}</Title>
+    </Conteiner>
+  </Fragment>
 );
 
 Img.propTypes = {

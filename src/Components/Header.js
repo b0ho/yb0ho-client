@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Navbar = styled.div`
   font-size: 40px;
   position: sticky;
+  display: inline-block;
   top: 0px;
   width: 100%;
   height: 60px;
