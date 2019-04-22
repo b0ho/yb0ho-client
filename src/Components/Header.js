@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
+import React, { Fragment, Component } from "react";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Navbar = styled.div`
   font-size: 40px;
