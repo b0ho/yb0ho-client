@@ -29,10 +29,7 @@ class App extends Component {
               <Project path={"#project"} component={Project} />
               <Detail path={"#detail"} component={Detail} />
               <Advice path={"#advice"} component={Advice} />
-<<<<<<< HEAD
-=======
               <Images path={"#Images"} component={Images} />
->>>>>>> d8ea703393411e0b444091efbc41d587c004791e
               <Footer />
             </div>
           </Route>
